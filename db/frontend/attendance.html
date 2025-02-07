@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+
+        
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Event Management App</h1>
+        <h2>出欠確認</h2>
+<table>
+    <tr>
+        <th>イベント名</th>
+        <th>日付</th>
+        <th>出欠</th>
+    </tr>
+    <tr>
+        <td>イベント1</td>
+        <td>2025-02-10</td>
+        <td>
+            <form action="http://127.0.0.1:5000/attendance" method="post">
+                <input type="hidden" name="event_id" value="1">
+                <button type="submit" name="status" value="attending">参加</button>
+                <button type="submit" name="status" value="not_attending">不参加</button>
+            </form>
+        </td>
+    </tr>
+</table>
+
+    </div>
+</body>
+</html>

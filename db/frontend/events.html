@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+       
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Event Management App</h1>
+        <h2>イベント一覧</h2>
+<ul>
+    <li>イベント1 - 2025-02-10 - Tokyo</li>
+    <li>イベント2 - 2025-02-11 - Osaka</li>
+</ul>
+
+<h2>イベントを作成</h2>
+<form action="/events/create" method="post">
+    <label for="title">タイトル:</label>
+    <input type="text" id="title" name="title" required>
+    <br><br>
+    <label for="date">日付:</label>
+    <input type="date" id="date" name="date" required>
+    <br><br>
+    <label for="location">場所:</label>
+    <input type="text" id="location" name="location">
+    <br><br>
+    <label for="description">説明:</label>
+    <textarea id="description" name="description"></textarea>
+    <br><br>
+    <button type="submit">作成</button>
+</form>
+
+    </div>
+</body>
+</html>
